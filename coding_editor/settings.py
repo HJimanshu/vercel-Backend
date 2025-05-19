@@ -8,7 +8,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'vercel-backend-zcwr.onrender.com']
-
+SECRET_KEY = "$lj-$#rb9m^aygx#jrn_4f9%v1*lukq+_er4$#h*o&d=dqr##+"
 
 INSTALLED_APPS = [
     'django.contrib.admin',
