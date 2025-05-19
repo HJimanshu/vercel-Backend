@@ -9,7 +9,10 @@ RUN pip3 install -r requirements.txt
 # Copy project
 COPY . .
 
-EXPOSE 8000
+# EXPOSE 8000
 
-CMD python manage.py runserver
+RUN python manage.py migrate
+
+# Start the server
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
  
